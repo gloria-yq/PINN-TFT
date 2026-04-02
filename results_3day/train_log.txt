@@ -1,0 +1,47 @@
+2026-03-31 19:31 - INFO - Args:
+2026-03-31 19:31 - INFO - 	data_path: None
+2026-03-31 19:31 - INFO - 	target_cols: t2m,z_500,t_850
+2026-03-31 19:31 - INFO - 	seq_length: 48
+2026-03-31 19:31 - INFO - 	encode_length: 36
+2026-03-31 19:31 - INFO - 	forecast_hours: 72
+2026-03-31 19:31 - INFO - 	batch_size: 32
+2026-03-31 19:31 - INFO - 	hidden_dim: 64
+2026-03-31 19:31 - INFO - 	embedding_dim: 16
+2026-03-31 19:31 - INFO - 	lstm_layers: 1
+2026-03-31 19:31 - INFO - 	attn_heads: 4
+2026-03-31 19:31 - INFO - 	dropout: 0.1
+2026-03-31 19:31 - INFO - 	epochs: 2
+2026-03-31 19:31 - INFO - 	lr: 0.001
+2026-03-31 19:31 - INFO - 	warmup_epochs: 10
+2026-03-31 19:31 - INFO - 	warmup_lr: 0.0001
+2026-03-31 19:31 - INFO - 	final_lr: 5e-05
+2026-03-31 19:31 - INFO - 	lr_F: 0.001
+2026-03-31 19:31 - INFO - 	early_stop: 15
+2026-03-31 19:31 - INFO - 	alpha: 0.5
+2026-03-31 19:31 - INFO - 	beta: 0.3
+2026-03-31 19:31 - INFO - 	gamma: 0.2
+2026-03-31 19:31 - INFO - 	T_min: 200.0
+2026-03-31 19:31 - INFO - 	T_max: 330.0
+2026-03-31 19:31 - INFO - 	delta_T_max: 15.0
+2026-03-31 19:31 - INFO - 	F_layers_num: 3
+2026-03-31 19:31 - INFO - 	F_hidden_dim: 64
+2026-03-31 19:31 - INFO - 	save_folder: results_3day
+2026-03-31 19:31 - INFO - 	log_dir: train_log.txt
+2026-03-31 19:31 - INFO - 	device: cuda
+2026-03-31 19:31 - INFO - 	demo: True
+2026-03-31 19:32 - INFO - [Train] epoch:1, lr:0.000100, data:0.928131, PDE:0.307170, phys:0.160419, total:1.129842
+2026-03-31 19:32 - INFO - [Valid] epoch:1, MSE: 0.53811061
+2026-03-31 19:32 - INFO - [Test] t2m RMSE(标准化): 1.300007
+2026-03-31 19:32 - INFO - [Test] z_500 RMSE(标准化): 1.283805
+2026-03-31 19:32 - INFO - [Test] t_850 RMSE(标准化): 1.024526
+2026-03-31 19:32 - INFO - [Test] t2m RMSE: 14.5098 K
+2026-03-31 19:32 - INFO - [Test] z_500 RMSE: 992.3597 m²/s²
+2026-03-31 19:32 - INFO - [Test] t_850 RMSE: 11.5872 K
+2026-03-31 19:32 - INFO - [Train] epoch:2, lr:0.000200, data:0.470388, PDE:0.063441, phys:0.126809, total:0.540151
+2026-03-31 19:32 - INFO - [Valid] epoch:2, MSE: 0.53179121
+2026-03-31 19:32 - INFO - [Test] t2m RMSE(标准化): 1.339406
+2026-03-31 19:32 - INFO - [Test] z_500 RMSE(标准化): 1.372744
+2026-03-31 19:32 - INFO - [Test] t_850 RMSE(标准化): 1.152144
+2026-03-31 19:32 - INFO - [Test] t2m RMSE: 14.9496 K
+2026-03-31 19:32 - INFO - [Test] z_500 RMSE: 1061.1077 m²/s²
+2026-03-31 19:32 - INFO - [Test] t_850 RMSE: 13.0305 K

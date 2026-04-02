@@ -1,0 +1,351 @@
+2026-03-31 19:41 - INFO - Args:
+2026-03-31 19:41 - INFO - 	data_path: E:\Download\ProcessedDataCSV\lat_-81.56_lon_0.00.csv
+2026-03-31 19:41 - INFO - 	target_cols: t2m,z_500,t_850
+2026-03-31 19:41 - INFO - 	seq_length: 72
+2026-03-31 19:41 - INFO - 	encode_length: 48
+2026-03-31 19:41 - INFO - 	forecast_hours: 72
+2026-03-31 19:41 - INFO - 	batch_size: 64
+2026-03-31 19:41 - INFO - 	hidden_dim: 64
+2026-03-31 19:41 - INFO - 	embedding_dim: 16
+2026-03-31 19:41 - INFO - 	lstm_layers: 1
+2026-03-31 19:41 - INFO - 	attn_heads: 4
+2026-03-31 19:41 - INFO - 	dropout: 0.1
+2026-03-31 19:41 - INFO - 	epochs: 200
+2026-03-31 19:41 - INFO - 	lr: 0.001
+2026-03-31 19:41 - INFO - 	warmup_epochs: 10
+2026-03-31 19:41 - INFO - 	warmup_lr: 0.0001
+2026-03-31 19:41 - INFO - 	final_lr: 5e-05
+2026-03-31 19:41 - INFO - 	lr_F: 0.001
+2026-03-31 19:41 - INFO - 	early_stop: 15
+2026-03-31 19:41 - INFO - 	alpha: 0.5
+2026-03-31 19:41 - INFO - 	beta: 0.3
+2026-03-31 19:41 - INFO - 	gamma: 0.2
+2026-03-31 19:41 - INFO - 	T_min: 200.0
+2026-03-31 19:41 - INFO - 	T_max: 330.0
+2026-03-31 19:41 - INFO - 	delta_T_max: 15.0
+2026-03-31 19:41 - INFO - 	F_layers_num: 3
+2026-03-31 19:41 - INFO - 	F_hidden_dim: 64
+2026-03-31 19:41 - INFO - 	save_folder: results
+2026-03-31 19:41 - INFO - 	log_dir: train_log.txt
+2026-03-31 19:41 - INFO - 	device: cuda
+2026-03-31 19:41 - INFO - 	demo: False
+2026-03-31 19:53 - INFO - Args:
+2026-03-31 19:53 - INFO - 	data_path: E:\Download\ProcessedDataCSV\lat_-81.56_lon_0.00.csv
+2026-03-31 19:53 - INFO - 	target_cols: t2m,z_500,t_850
+2026-03-31 19:53 - INFO - 	seq_length: 72
+2026-03-31 19:53 - INFO - 	encode_length: 48
+2026-03-31 19:53 - INFO - 	forecast_hours: 72
+2026-03-31 19:53 - INFO - 	batch_size: 64
+2026-03-31 19:53 - INFO - 	hidden_dim: 64
+2026-03-31 19:53 - INFO - 	embedding_dim: 16
+2026-03-31 19:53 - INFO - 	lstm_layers: 1
+2026-03-31 19:53 - INFO - 	attn_heads: 4
+2026-03-31 19:53 - INFO - 	dropout: 0.1
+2026-03-31 19:53 - INFO - 	epochs: 200
+2026-03-31 19:53 - INFO - 	lr: 0.001
+2026-03-31 19:53 - INFO - 	warmup_epochs: 10
+2026-03-31 19:53 - INFO - 	warmup_lr: 0.0001
+2026-03-31 19:53 - INFO - 	final_lr: 5e-05
+2026-03-31 19:53 - INFO - 	lr_F: 0.001
+2026-03-31 19:53 - INFO - 	early_stop: 15
+2026-03-31 19:53 - INFO - 	alpha: 0.5
+2026-03-31 19:53 - INFO - 	beta: 0.3
+2026-03-31 19:53 - INFO - 	gamma: 0.2
+2026-03-31 19:53 - INFO - 	T_min: 200.0
+2026-03-31 19:53 - INFO - 	T_max: 330.0
+2026-03-31 19:53 - INFO - 	delta_T_max: 15.0
+2026-03-31 19:53 - INFO - 	F_layers_num: 3
+2026-03-31 19:53 - INFO - 	F_hidden_dim: 64
+2026-03-31 19:53 - INFO - 	save_folder: results
+2026-03-31 19:53 - INFO - 	log_dir: train_log.txt
+2026-03-31 19:53 - INFO - 	device: cuda
+2026-03-31 19:53 - INFO - 	demo: False
+2026-03-31 20:44 - INFO - [Train] epoch:1, lr:0.000100, data:0.413960, PDE:0.018417, phys:0.014179, total:0.427422
+2026-03-31 20:47 - INFO - [Valid] epoch:1, MSE: 0.36343336
+2026-03-31 20:56 - INFO - [Test] t2m RMSE(标准化): 0.538690
+2026-03-31 20:56 - INFO - [Test] z_500 RMSE(标准化): 0.700255
+2026-03-31 20:56 - INFO - [Test] t_850 RMSE(标准化): 0.545830
+2026-03-31 20:56 - INFO - [Test] t2m RMSE: 5.4256 K
+2026-03-31 20:56 - INFO - [Test] z_500 RMSE: 909.5370 m²/s²
+2026-03-31 20:56 - INFO - [Test] t_850 RMSE: 4.4467 K
+2026-03-31 22:05 - INFO - [Train] epoch:2, lr:0.000200, data:0.316861, PDE:0.000659, phys:0.005702, total:0.318901
+2026-03-31 22:11 - INFO - [Valid] epoch:2, MSE: 0.37519595
+2026-03-31 23:15 - INFO - [Train] epoch:3, lr:0.000300, data:0.265787, PDE:0.000382, phys:0.005279, total:0.267562
+2026-03-31 23:22 - INFO - [Valid] epoch:3, MSE: 0.42143115
+2026-04-01 00:25 - INFO - [Train] epoch:4, lr:0.000400, data:0.220027, PDE:0.000301, phys:0.005412, total:0.221801
+2026-04-01 00:31 - INFO - [Valid] epoch:4, MSE: 0.43774703
+2026-04-01 01:33 - INFO - [Train] epoch:5, lr:0.000500, data:0.188947, PDE:0.000276, phys:0.005533, total:0.190745
+2026-04-01 01:40 - INFO - [Valid] epoch:5, MSE: 0.44885185
+2026-04-01 02:43 - INFO - [Train] epoch:6, lr:0.000600, data:0.166222, PDE:0.000251, phys:0.005627, total:0.168036
+2026-04-01 02:50 - INFO - [Valid] epoch:6, MSE: 0.44168031
+2026-04-01 03:54 - INFO - [Train] epoch:7, lr:0.000700, data:0.148890, PDE:0.000248, phys:0.005719, total:0.150730
+2026-04-01 04:01 - INFO - [Valid] epoch:7, MSE: 0.43327567
+2026-04-01 05:05 - INFO - [Train] epoch:8, lr:0.000800, data:0.136198, PDE:0.000224, phys:0.005638, total:0.138001
+2026-04-01 05:12 - INFO - [Valid] epoch:8, MSE: 0.46117678
+2026-04-01 06:16 - INFO - [Train] epoch:9, lr:0.000900, data:0.124562, PDE:0.000233, phys:0.005643, total:0.126371
+2026-04-01 06:23 - INFO - [Valid] epoch:9, MSE: 0.44322953
+2026-04-01 07:28 - INFO - [Train] epoch:10, lr:0.001000, data:0.117930, PDE:0.000206, phys:0.005618, total:0.119719
+2026-04-01 07:34 - INFO - [Valid] epoch:10, MSE: 0.46197686
+2026-04-01 08:39 - INFO - [Train] epoch:11, lr:0.001000, data:0.110257, PDE:0.000206, phys:0.005564, total:0.112030
+2026-04-01 08:46 - INFO - [Valid] epoch:11, MSE: 0.48016542
+2026-04-01 09:51 - INFO - [Train] epoch:12, lr:0.001000, data:0.102652, PDE:0.000208, phys:0.005541, total:0.104419
+2026-04-01 09:57 - INFO - [Valid] epoch:12, MSE: 0.47112820
+2026-04-01 11:02 - INFO - [Train] epoch:13, lr:0.001000, data:0.095919, PDE:0.000200, phys:0.005507, total:0.097671
+2026-04-01 11:08 - INFO - [Valid] epoch:13, MSE: 0.45428595
+2026-04-01 12:03 - INFO - [Train] epoch:14, lr:0.000999, data:0.090950, PDE:0.000188, phys:0.005457, total:0.092681
+2026-04-01 12:04 - INFO - [Valid] epoch:14, MSE: 0.46229792
+2026-04-01 15:53 - INFO - Args:
+2026-04-01 15:53 - INFO - 	data_path: E:\Download\ProcessedDataCSV\lat_-81.56_lon_0.00.csv
+2026-04-01 15:53 - INFO - 	max_samples: 50000
+2026-04-01 15:53 - INFO - 	target_cols: t2m,z_500,t_850
+2026-04-01 15:53 - INFO - 	seq_length: 72
+2026-04-01 15:53 - INFO - 	encode_length: 48
+2026-04-01 15:53 - INFO - 	forecast_hours: 72,120
+2026-04-01 15:53 - INFO - 	batch_size: 64
+2026-04-01 15:53 - INFO - 	hidden_dim: 64
+2026-04-01 15:53 - INFO - 	embedding_dim: 16
+2026-04-01 15:53 - INFO - 	lstm_layers: 1
+2026-04-01 15:53 - INFO - 	attn_heads: 4
+2026-04-01 15:53 - INFO - 	dropout: 0.1
+2026-04-01 15:53 - INFO - 	epochs: 200
+2026-04-01 15:53 - INFO - 	lr: 0.001
+2026-04-01 15:53 - INFO - 	warmup_epochs: 10
+2026-04-01 15:53 - INFO - 	warmup_lr: 0.0001
+2026-04-01 15:53 - INFO - 	final_lr: 5e-05
+2026-04-01 15:53 - INFO - 	lr_F: 0.001
+2026-04-01 15:53 - INFO - 	early_stop: 15
+2026-04-01 15:53 - INFO - 	alpha: 0.5
+2026-04-01 15:53 - INFO - 	beta: 0.3
+2026-04-01 15:53 - INFO - 	gamma: 0.2
+2026-04-01 15:53 - INFO - 	T_min: 200.0
+2026-04-01 15:53 - INFO - 	T_max: 330.0
+2026-04-01 15:53 - INFO - 	delta_T_max: 15.0
+2026-04-01 15:53 - INFO - 	F_layers_num: 3
+2026-04-01 15:53 - INFO - 	F_hidden_dim: 64
+2026-04-01 15:53 - INFO - 	save_folder: results
+2026-04-01 15:53 - INFO - 	log_dir: train_log.txt
+2026-04-01 15:53 - INFO - 	device: cuda
+2026-04-01 15:53 - INFO - 	demo: False
+2026-04-01 15:54 - INFO -   [epoch:1 iter:50] data:1.010702 PDE:0.272891 phys:0.057012
+2026-04-01 15:55 - INFO -   [epoch:1 iter:100] data:0.825570 PDE:0.114047 phys:0.058269
+2026-04-01 15:56 - INFO -   [epoch:1 iter:150] data:0.606950 PDE:0.080968 phys:0.034539
+2026-04-01 15:57 - INFO -   [epoch:1 iter:200] data:0.647802 PDE:0.056946 phys:0.025357
+2026-04-01 15:58 - INFO -   [epoch:1 iter:250] data:0.736553 PDE:0.049220 phys:0.029966
+2026-04-01 15:58 - INFO -   [epoch:1 iter:300] data:0.516160 PDE:0.040756 phys:0.022643
+2026-04-01 15:59 - INFO -   [epoch:1 iter:350] data:0.584715 PDE:0.037158 phys:0.026506
+2026-04-01 16:00 - INFO -   [epoch:1 iter:400] data:0.428953 PDE:0.023366 phys:0.022200
+2026-04-01 16:01 - INFO -   [epoch:1 iter:450] data:0.517325 PDE:0.017809 phys:0.024331
+2026-04-01 16:02 - INFO - [Train] epoch:1, lr:0.000100, data:0.670174, PDE:0.105073, phys:0.038120, total:0.734146
+2026-04-01 16:03 - INFO - [Valid] epoch:1, MSE: 0.51251245
+2026-04-01 16:04 - INFO - [Test] t2m_72h RMSE(标准化): 0.603765
+2026-04-01 16:04 - INFO - [Test] z_500_72h RMSE(标准化): 0.754448
+2026-04-01 16:04 - INFO - [Test] t_850_72h RMSE(标准化): 0.656478
+2026-04-01 16:04 - INFO - [Test] t2m_120h RMSE(标准化): 0.650180
+2026-04-01 16:04 - INFO - [Test] z_500_120h RMSE(标准化): 0.909785
+2026-04-01 16:04 - INFO - [Test] t_850_120h RMSE(标准化): 0.717751
+2026-04-01 16:04 - INFO - [Test] t2m_72h RMSE: 6.1088 K
+2026-04-01 16:04 - INFO - [Test] z_500_72h RMSE: 940.7043 m²/s²
+2026-04-01 16:04 - INFO - [Test] t_850_72h RMSE: 5.1471 K
+2026-04-01 16:04 - INFO - [Test] t2m_120h RMSE: 6.5784 K
+2026-04-01 16:04 - INFO - [Test] z_500_120h RMSE: 1134.3911 m²/s²
+2026-04-01 16:04 - INFO - [Test] t_850_120h RMSE: 5.6275 K
+2026-04-01 16:04 - INFO -   [epoch:2 iter:50] data:0.507668 PDE:0.026915 phys:0.035294
+2026-04-01 16:04 - INFO -   [epoch:2 iter:100] data:0.505940 PDE:0.020593 phys:0.038253
+2026-04-01 16:04 - INFO -   [epoch:2 iter:150] data:0.467229 PDE:0.012992 phys:0.021926
+2026-04-01 16:05 - INFO -   [epoch:2 iter:200] data:0.517126 PDE:0.014438 phys:0.020815
+2026-04-01 16:05 - INFO -   [epoch:2 iter:250] data:0.369834 PDE:0.009560 phys:0.015815
+2026-04-01 16:05 - INFO -   [epoch:2 iter:300] data:0.509038 PDE:0.010539 phys:0.020181
+2026-04-01 16:06 - INFO -   [epoch:2 iter:350] data:0.476039 PDE:0.011290 phys:0.023631
+2026-04-01 16:07 - INFO -   [epoch:2 iter:400] data:0.423095 PDE:0.008267 phys:0.016736
+2026-04-01 16:08 - INFO -   [epoch:2 iter:450] data:0.477459 PDE:0.011464 phys:0.016304
+2026-04-01 16:09 - INFO - [Train] epoch:2, lr:0.000200, data:0.439091, PDE:0.012740, phys:0.020181, total:0.451515
+2026-04-01 16:10 - INFO - [Valid] epoch:2, MSE: 0.48295769
+2026-04-01 16:11 - INFO - [Test] t2m_72h RMSE(标准化): 0.585394
+2026-04-01 16:11 - INFO - [Test] z_500_72h RMSE(标准化): 0.755163
+2026-04-01 16:11 - INFO - [Test] t_850_72h RMSE(标准化): 0.620499
+2026-04-01 16:11 - INFO - [Test] t2m_120h RMSE(标准化): 0.603678
+2026-04-01 16:11 - INFO - [Test] z_500_120h RMSE(标准化): 0.885892
+2026-04-01 16:11 - INFO - [Test] t_850_120h RMSE(标准化): 0.657740
+2026-04-01 16:11 - INFO - [Test] t2m_72h RMSE: 5.9229 K
+2026-04-01 16:11 - INFO - [Test] z_500_72h RMSE: 941.5962 m²/s²
+2026-04-01 16:11 - INFO - [Test] t_850_72h RMSE: 4.8650 K
+2026-04-01 16:11 - INFO - [Test] t2m_120h RMSE: 6.1079 K
+2026-04-01 16:11 - INFO - [Test] z_500_120h RMSE: 1104.5995 m²/s²
+2026-04-01 16:11 - INFO - [Test] t_850_120h RMSE: 5.1570 K
+2026-04-01 16:12 - INFO -   [epoch:3 iter:50] data:0.527732 PDE:0.008256 phys:0.015527
+2026-04-01 16:13 - INFO -   [epoch:3 iter:100] data:0.375103 PDE:0.006053 phys:0.013139
+2026-04-01 16:14 - INFO -   [epoch:3 iter:150] data:0.349700 PDE:0.007014 phys:0.014347
+2026-04-01 16:14 - INFO -   [epoch:3 iter:200] data:0.396459 PDE:0.006651 phys:0.014725
+2026-04-01 16:14 - INFO -   [epoch:3 iter:250] data:0.342165 PDE:0.005688 phys:0.014426
+2026-04-01 16:15 - INFO -   [epoch:3 iter:300] data:0.371235 PDE:0.004756 phys:0.011692
+2026-04-01 16:16 - INFO -   [epoch:3 iter:350] data:0.271095 PDE:0.004410 phys:0.011688
+2026-04-01 16:17 - INFO -   [epoch:3 iter:400] data:0.319610 PDE:0.005307 phys:0.013814
+2026-04-01 16:18 - INFO -   [epoch:3 iter:450] data:0.251300 PDE:0.003815 phys:0.011028
+2026-04-01 16:19 - INFO - [Train] epoch:3, lr:0.000300, data:0.334937, PDE:0.005735, phys:0.013926, total:0.341982
+2026-04-01 16:19 - INFO - [Valid] epoch:3, MSE: 0.54244578
+2026-04-01 16:20 - INFO -   [epoch:4 iter:50] data:0.247763 PDE:0.003508 phys:0.009478
+2026-04-01 16:21 - INFO -   [epoch:4 iter:100] data:0.290532 PDE:0.003580 phys:0.011909
+2026-04-01 16:22 - INFO -   [epoch:4 iter:150] data:0.261874 PDE:0.002617 phys:0.010548
+2026-04-01 16:23 - INFO -   [epoch:4 iter:200] data:0.225040 PDE:0.004012 phys:0.007459
+2026-04-01 16:24 - INFO -   [epoch:4 iter:250] data:0.241235 PDE:0.003920 phys:0.010214
+2026-04-01 16:25 - INFO -   [epoch:4 iter:300] data:0.217696 PDE:0.002900 phys:0.010400
+2026-04-01 16:26 - INFO -   [epoch:4 iter:350] data:0.290290 PDE:0.002786 phys:0.009058
+2026-04-01 16:26 - INFO -   [epoch:4 iter:400] data:0.211869 PDE:0.003057 phys:0.008300
+2026-04-01 16:27 - INFO -   [epoch:4 iter:450] data:0.200954 PDE:0.002957 phys:0.009247
+2026-04-01 16:28 - INFO - [Train] epoch:4, lr:0.000400, data:0.248718, PDE:0.003333, phys:0.010594, total:0.253562
+2026-04-01 16:29 - INFO - [Valid] epoch:4, MSE: 0.54385597
+2026-04-01 16:30 - INFO -   [epoch:5 iter:50] data:0.223506 PDE:0.002103 phys:0.006901
+2026-04-01 16:31 - INFO -   [epoch:5 iter:100] data:0.219674 PDE:0.002069 phys:0.008690
+2026-04-01 16:32 - INFO -   [epoch:5 iter:150] data:0.182647 PDE:0.001772 phys:0.007067
+2026-04-01 16:33 - INFO -   [epoch:5 iter:200] data:0.212246 PDE:0.002073 phys:0.008643
+2026-04-01 16:34 - INFO -   [epoch:5 iter:250] data:0.204646 PDE:0.002088 phys:0.008897
+2026-04-01 16:35 - INFO -   [epoch:5 iter:300] data:0.216521 PDE:0.002001 phys:0.010151
+2026-04-01 16:35 - INFO -   [epoch:5 iter:350] data:0.169743 PDE:0.001766 phys:0.009051
+2026-04-01 16:36 - INFO -   [epoch:5 iter:400] data:0.224029 PDE:0.001750 phys:0.008549
+2026-04-01 16:37 - INFO -   [epoch:5 iter:450] data:0.181867 PDE:0.001853 phys:0.006569
+2026-04-01 16:38 - INFO - [Train] epoch:5, lr:0.000500, data:0.203454, PDE:0.002140, phys:0.008658, total:0.207121
+2026-04-01 16:39 - INFO - [Valid] epoch:5, MSE: 0.58297080
+2026-04-01 16:40 - INFO -   [epoch:6 iter:50] data:0.178506 PDE:0.001439 phys:0.006074
+2026-04-01 16:41 - INFO -   [epoch:6 iter:100] data:0.191204 PDE:0.001849 phys:0.008735
+2026-04-01 16:42 - INFO -   [epoch:6 iter:150] data:0.204188 PDE:0.001281 phys:0.008352
+2026-04-01 16:43 - INFO -   [epoch:6 iter:200] data:0.193730 PDE:0.002834 phys:0.009637
+2026-04-01 16:44 - INFO -   [epoch:6 iter:250] data:0.160415 PDE:0.001417 phys:0.007032
+2026-04-01 16:45 - INFO -   [epoch:6 iter:300] data:0.160370 PDE:0.002009 phys:0.009401
+2026-04-01 16:46 - INFO -   [epoch:6 iter:350] data:0.231713 PDE:0.001217 phys:0.006756
+2026-04-01 16:47 - INFO -   [epoch:6 iter:400] data:0.144710 PDE:0.001518 phys:0.008715
+2026-04-01 16:48 - INFO -   [epoch:6 iter:450] data:0.164842 PDE:0.001987 phys:0.009536
+2026-04-01 16:49 - INFO - [Train] epoch:6, lr:0.000600, data:0.170678, PDE:0.001597, phys:0.007776, total:0.173809
+2026-04-01 16:50 - INFO - [Valid] epoch:6, MSE: 0.59550315
+2026-04-01 16:51 - INFO -   [epoch:7 iter:50] data:0.175194 PDE:0.001262 phys:0.009323
+2026-04-01 16:52 - INFO -   [epoch:7 iter:100] data:0.157437 PDE:0.001165 phys:0.007457
+2026-04-01 16:53 - INFO -   [epoch:7 iter:150] data:0.184342 PDE:0.001392 phys:0.008206
+2026-04-01 16:54 - INFO -   [epoch:7 iter:200] data:0.124793 PDE:0.001316 phys:0.007466
+2026-04-01 16:55 - INFO -   [epoch:7 iter:250] data:0.149334 PDE:0.001591 phys:0.007218
+2026-04-01 16:56 - INFO -   [epoch:7 iter:300] data:0.125844 PDE:0.001294 phys:0.008329
+2026-04-01 16:57 - INFO -   [epoch:7 iter:350] data:0.167493 PDE:0.000924 phys:0.006451
+2026-04-01 16:58 - INFO -   [epoch:7 iter:400] data:0.136830 PDE:0.000862 phys:0.005758
+2026-04-01 16:59 - INFO -   [epoch:7 iter:450] data:0.131965 PDE:0.000762 phys:0.006407
+2026-04-01 17:00 - INFO - [Train] epoch:7, lr:0.000700, data:0.145828, PDE:0.001175, phys:0.007179, total:0.148568
+2026-04-01 17:01 - INFO - [Valid] epoch:7, MSE: 0.63069242
+2026-04-01 17:02 - INFO -   [epoch:8 iter:50] data:0.166030 PDE:0.000870 phys:0.005961
+2026-04-01 17:03 - INFO -   [epoch:8 iter:100] data:0.124539 PDE:0.000910 phys:0.005697
+2026-04-01 17:04 - INFO -   [epoch:8 iter:150] data:0.162723 PDE:0.001002 phys:0.005963
+2026-04-01 17:05 - INFO -   [epoch:8 iter:200] data:0.133608 PDE:0.000656 phys:0.006768
+2026-04-01 17:06 - INFO -   [epoch:8 iter:250] data:0.130790 PDE:0.000998 phys:0.006512
+2026-04-01 17:07 - INFO -   [epoch:8 iter:300] data:0.124848 PDE:0.000945 phys:0.007170
+2026-04-01 17:08 - INFO -   [epoch:8 iter:350] data:0.141034 PDE:0.000908 phys:0.008390
+2026-04-01 17:09 - INFO -   [epoch:8 iter:400] data:0.125707 PDE:0.000983 phys:0.008522
+2026-04-01 17:10 - INFO -   [epoch:8 iter:450] data:0.101114 PDE:0.000991 phys:0.007954
+2026-04-01 17:11 - INFO - [Train] epoch:8, lr:0.000800, data:0.137404, PDE:0.000967, phys:0.006751, total:0.139913
+2026-04-01 17:12 - INFO - [Valid] epoch:8, MSE: 0.57175183
+2026-04-01 17:13 - INFO -   [epoch:9 iter:50] data:0.138608 PDE:0.000880 phys:0.007320
+2026-04-01 17:14 - INFO -   [epoch:9 iter:100] data:0.103381 PDE:0.000925 phys:0.007366
+2026-04-01 17:15 - INFO -   [epoch:9 iter:150] data:0.088550 PDE:0.000883 phys:0.006861
+2026-04-01 17:16 - INFO -   [epoch:9 iter:200] data:0.087139 PDE:0.000862 phys:0.006316
+2026-04-01 17:17 - INFO -   [epoch:9 iter:250] data:0.108457 PDE:0.000657 phys:0.005409
+2026-04-01 17:18 - INFO -   [epoch:9 iter:300] data:0.132809 PDE:0.000875 phys:0.007017
+2026-04-01 17:19 - INFO -   [epoch:9 iter:350] data:0.111552 PDE:0.000793 phys:0.006642
+2026-04-01 17:20 - INFO -   [epoch:9 iter:400] data:0.085524 PDE:0.000799 phys:0.006596
+2026-04-01 17:21 - INFO -   [epoch:9 iter:450] data:0.104672 PDE:0.000765 phys:0.007438
+2026-04-01 17:22 - INFO - [Train] epoch:9, lr:0.000900, data:0.113876, PDE:0.000809, phys:0.006364, total:0.116190
+2026-04-01 17:23 - INFO - [Valid] epoch:9, MSE: 0.65254730
+2026-04-01 17:24 - INFO -   [epoch:10 iter:50] data:0.103580 PDE:0.000485 phys:0.006165
+2026-04-01 17:25 - INFO -   [epoch:10 iter:100] data:0.114508 PDE:0.000706 phys:0.004892
+2026-04-01 17:26 - INFO -   [epoch:10 iter:150] data:0.097661 PDE:0.000706 phys:0.005348
+2026-04-01 17:27 - INFO -   [epoch:10 iter:200] data:0.115088 PDE:0.000582 phys:0.004894
+2026-04-01 17:28 - INFO -   [epoch:10 iter:250] data:0.102086 PDE:0.000514 phys:0.006081
+2026-04-01 17:29 - INFO -   [epoch:10 iter:300] data:0.118891 PDE:0.000766 phys:0.006602
+2026-04-01 17:30 - INFO -   [epoch:10 iter:350] data:0.090499 PDE:0.000643 phys:0.005772
+2026-04-01 17:31 - INFO -   [epoch:10 iter:400] data:0.106834 PDE:0.000627 phys:0.005266
+2026-04-01 17:32 - INFO -   [epoch:10 iter:450] data:0.084108 PDE:0.000482 phys:0.006004
+2026-04-01 17:33 - INFO - [Train] epoch:10, lr:0.001000, data:0.112788, PDE:0.000676, phys:0.006056, total:0.114943
+2026-04-01 17:34 - INFO - [Valid] epoch:10, MSE: 0.59801507
+2026-04-01 17:35 - INFO -   [epoch:11 iter:50] data:0.127119 PDE:0.000683 phys:0.006284
+2026-04-01 17:36 - INFO -   [epoch:11 iter:100] data:0.118937 PDE:0.000572 phys:0.005410
+2026-04-01 17:37 - INFO -   [epoch:11 iter:150] data:0.105026 PDE:0.000502 phys:0.005472
+2026-04-01 17:37 - INFO -   [epoch:11 iter:200] data:0.072427 PDE:0.000577 phys:0.006561
+2026-04-01 17:38 - INFO -   [epoch:11 iter:250] data:0.089198 PDE:0.000670 phys:0.005551
+2026-04-01 17:39 - INFO -   [epoch:11 iter:300] data:0.091765 PDE:0.000568 phys:0.006204
+2026-04-01 17:40 - INFO -   [epoch:11 iter:350] data:0.071010 PDE:0.000520 phys:0.005009
+2026-04-01 17:41 - INFO -   [epoch:11 iter:400] data:0.086296 PDE:0.000621 phys:0.006064
+2026-04-01 17:42 - INFO -   [epoch:11 iter:450] data:0.068380 PDE:0.000506 phys:0.004975
+2026-04-01 17:43 - INFO - [Train] epoch:11, lr:0.001000, data:0.097913, PDE:0.000604, phys:0.005826, total:0.099963
+2026-04-01 17:43 - INFO - [Valid] epoch:11, MSE: 0.57734507
+2026-04-01 17:44 - INFO -   [epoch:12 iter:50] data:0.085509 PDE:0.000703 phys:0.006787
+2026-04-01 17:45 - INFO -   [epoch:12 iter:100] data:0.086644 PDE:0.000533 phys:0.005567
+2026-04-01 17:46 - INFO -   [epoch:12 iter:150] data:0.081464 PDE:0.000637 phys:0.006181
+2026-04-01 17:47 - INFO -   [epoch:12 iter:200] data:0.094064 PDE:0.000411 phys:0.003088
+2026-04-01 17:48 - INFO -   [epoch:12 iter:250] data:0.081378 PDE:0.000460 phys:0.004593
+2026-04-01 17:49 - INFO -   [epoch:12 iter:300] data:0.080407 PDE:0.000703 phys:0.006980
+2026-04-01 17:49 - INFO -   [epoch:12 iter:350] data:0.074964 PDE:0.000522 phys:0.006372
+2026-04-01 17:50 - INFO -   [epoch:12 iter:400] data:0.068470 PDE:0.000634 phys:0.004849
+2026-04-01 17:51 - INFO -   [epoch:12 iter:450] data:0.076843 PDE:0.000613 phys:0.006018
+2026-04-01 17:52 - INFO - [Train] epoch:12, lr:0.001000, data:0.084495, PDE:0.000562, phys:0.005632, total:0.086465
+2026-04-01 17:53 - INFO - [Valid] epoch:12, MSE: 0.58316118
+2026-04-01 17:54 - INFO -   [epoch:13 iter:50] data:0.097090 PDE:0.000468 phys:0.004917
+2026-04-01 17:54 - INFO -   [epoch:13 iter:100] data:0.105239 PDE:0.000461 phys:0.005512
+2026-04-01 17:55 - INFO -   [epoch:13 iter:150] data:0.069168 PDE:0.000452 phys:0.005241
+2026-04-01 17:56 - INFO -   [epoch:13 iter:200] data:0.105399 PDE:0.000476 phys:0.005012
+2026-04-01 17:57 - INFO -   [epoch:13 iter:250] data:0.065284 PDE:0.000471 phys:0.005428
+2026-04-01 17:58 - INFO -   [epoch:13 iter:300] data:0.084952 PDE:0.000545 phys:0.007417
+2026-04-01 17:59 - INFO -   [epoch:13 iter:350] data:0.065038 PDE:0.000423 phys:0.004955
+2026-04-01 18:00 - INFO -   [epoch:13 iter:400] data:0.069833 PDE:0.000467 phys:0.005521
+2026-04-01 18:00 - INFO -   [epoch:13 iter:450] data:0.069048 PDE:0.000589 phys:0.005126
+2026-04-01 18:01 - INFO - [Train] epoch:13, lr:0.001000, data:0.079835, PDE:0.000507, phys:0.005457, total:0.081725
+2026-04-01 18:02 - INFO - [Valid] epoch:13, MSE: 0.57247686
+2026-04-01 18:03 - INFO -   [epoch:14 iter:50] data:0.077432 PDE:0.000477 phys:0.004987
+2026-04-01 18:04 - INFO -   [epoch:14 iter:100] data:0.070948 PDE:0.000406 phys:0.006358
+2026-04-01 18:05 - INFO -   [epoch:14 iter:150] data:0.064944 PDE:0.000550 phys:0.005440
+2026-04-01 18:05 - INFO -   [epoch:14 iter:200] data:0.079517 PDE:0.000453 phys:0.005414
+2026-04-01 18:06 - INFO -   [epoch:14 iter:250] data:0.061039 PDE:0.000529 phys:0.005166
+2026-04-01 18:07 - INFO -   [epoch:14 iter:300] data:0.066617 PDE:0.000494 phys:0.005741
+2026-04-01 18:08 - INFO -   [epoch:14 iter:350] data:0.082903 PDE:0.000453 phys:0.004935
+2026-04-01 18:09 - INFO -   [epoch:14 iter:400] data:0.057708 PDE:0.000375 phys:0.004480
+2026-04-01 18:10 - INFO -   [epoch:14 iter:450] data:0.071856 PDE:0.000653 phys:0.004786
+2026-04-01 18:11 - INFO - [Train] epoch:14, lr:0.000999, data:0.074371, PDE:0.000474, phys:0.005299, total:0.076198
+2026-04-01 18:11 - INFO - [Valid] epoch:14, MSE: 0.57836622
+2026-04-01 18:12 - INFO -   [epoch:15 iter:50] data:0.085076 PDE:0.000701 phys:0.006268
+2026-04-01 18:13 - INFO -   [epoch:15 iter:100] data:0.081975 PDE:0.000443 phys:0.004845
+2026-04-01 18:14 - INFO -   [epoch:15 iter:150] data:0.055858 PDE:0.000505 phys:0.005430
+2026-04-01 18:15 - INFO -   [epoch:15 iter:200] data:0.069016 PDE:0.000436 phys:0.005687
+2026-04-01 18:16 - INFO -   [epoch:15 iter:250] data:0.071976 PDE:0.000468 phys:0.005903
+2026-04-01 18:17 - INFO -   [epoch:15 iter:300] data:0.064467 PDE:0.000451 phys:0.005892
+2026-04-01 18:17 - INFO -   [epoch:15 iter:350] data:0.070762 PDE:0.000445 phys:0.004456
+2026-04-01 18:18 - INFO -   [epoch:15 iter:400] data:0.060924 PDE:0.000480 phys:0.006389
+2026-04-01 18:19 - INFO -   [epoch:15 iter:450] data:0.052863 PDE:0.000502 phys:0.004588
+2026-04-01 18:20 - INFO - [Train] epoch:15, lr:0.000999, data:0.068550, PDE:0.000465, phys:0.005234, total:0.070353
+2026-04-01 18:21 - INFO - [Valid] epoch:15, MSE: 0.59971976
+2026-04-01 18:22 - INFO -   [epoch:16 iter:50] data:0.077991 PDE:0.000408 phys:0.004772
+2026-04-01 18:22 - INFO -   [epoch:16 iter:100] data:0.058255 PDE:0.000744 phys:0.006438
+2026-04-01 18:23 - INFO -   [epoch:16 iter:150] data:0.063799 PDE:0.000384 phys:0.005103
+2026-04-01 18:24 - INFO -   [epoch:16 iter:200] data:0.053955 PDE:0.000349 phys:0.004469
+2026-04-01 18:25 - INFO -   [epoch:16 iter:250] data:0.063917 PDE:0.000370 phys:0.005896
+2026-04-01 18:25 - INFO -   [epoch:16 iter:300] data:0.061819 PDE:0.000425 phys:0.004838
+2026-04-01 18:25 - INFO -   [epoch:16 iter:350] data:0.066840 PDE:0.000342 phys:0.004406
+2026-04-01 18:25 - INFO -   [epoch:16 iter:400] data:0.056569 PDE:0.000374 phys:0.005622
+2026-04-01 18:26 - INFO -   [epoch:16 iter:450] data:0.067485 PDE:0.000343 phys:0.004738
+2026-04-01 18:27 - INFO - [Train] epoch:16, lr:0.000998, data:0.067757, PDE:0.000434, phys:0.005196, total:0.069533
+2026-04-01 18:28 - INFO - [Valid] epoch:16, MSE: 0.57024914
+2026-04-01 18:29 - INFO -   [epoch:17 iter:50] data:0.074798 PDE:0.000349 phys:0.005293
+2026-04-01 18:30 - INFO -   [epoch:17 iter:100] data:0.049132 PDE:0.000343 phys:0.004228
+2026-04-01 18:31 - INFO -   [epoch:17 iter:150] data:0.066120 PDE:0.000338 phys:0.006195
+2026-04-01 18:32 - INFO -   [epoch:17 iter:200] data:0.060247 PDE:0.000668 phys:0.005446
+2026-04-01 18:33 - INFO -   [epoch:17 iter:250] data:0.057867 PDE:0.000408 phys:0.004363
+2026-04-01 18:34 - INFO -   [epoch:17 iter:300] data:0.047631 PDE:0.000358 phys:0.004593
+2026-04-01 18:35 - INFO -   [epoch:17 iter:350] data:0.067788 PDE:0.000404 phys:0.005919
+2026-04-01 18:36 - INFO -   [epoch:17 iter:400] data:0.059859 PDE:0.000402 phys:0.004174
+2026-04-01 18:37 - INFO -   [epoch:17 iter:450] data:0.075496 PDE:0.000333 phys:0.004798
+2026-04-01 18:38 - INFO - [Train] epoch:17, lr:0.000998, data:0.059669, PDE:0.000425, phys:0.005026, total:0.061390
+2026-04-01 18:39 - INFO - [Valid] epoch:17, MSE: 0.57513309
+2026-04-01 18:40 - INFO -   [epoch:18 iter:50] data:0.074126 PDE:0.000439 phys:0.004538
+2026-04-01 18:41 - INFO -   [epoch:18 iter:100] data:0.066764 PDE:0.000484 phys:0.004815
+2026-04-01 18:42 - INFO -   [epoch:18 iter:150] data:0.060189 PDE:0.000405 phys:0.004705
+2026-04-01 18:43 - INFO -   [epoch:18 iter:200] data:0.045420 PDE:0.000347 phys:0.004781
+2026-04-01 18:44 - INFO -   [epoch:18 iter:250] data:0.059096 PDE:0.000361 phys:0.004741
+2026-04-01 18:45 - INFO -   [epoch:18 iter:300] data:0.054596 PDE:0.000417 phys:0.004932
+2026-04-01 18:46 - INFO -   [epoch:18 iter:350] data:0.053105 PDE:0.000349 phys:0.004981
+2026-04-01 18:47 - INFO -   [epoch:18 iter:400] data:0.057088 PDE:0.000379 phys:0.004698
+2026-04-01 18:48 - INFO -   [epoch:18 iter:450] data:0.053778 PDE:0.000644 phys:0.005640
+2026-04-01 18:49 - INFO - [Train] epoch:18, lr:0.000997, data:0.057818, PDE:0.000387, phys:0.004819, total:0.059457
+2026-04-01 18:50 - INFO - [Valid] epoch:18, MSE: 0.55594206
+2026-04-01 18:50 - INFO - Early stop at epoch 18

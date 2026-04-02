@@ -1,0 +1,36 @@
+2026-03-31 14:58 - INFO - Args:
+2026-03-31 14:58 - INFO - 	data_path: None
+2026-03-31 14:58 - INFO - 	target_col: t2m
+2026-03-31 14:58 - INFO - 	seq_length: 48
+2026-03-31 14:58 - INFO - 	encode_length: 36
+2026-03-31 14:58 - INFO - 	batch_size: 32
+2026-03-31 14:58 - INFO - 	hidden_dim: 64
+2026-03-31 14:58 - INFO - 	embedding_dim: 16
+2026-03-31 14:58 - INFO - 	lstm_layers: 1
+2026-03-31 14:58 - INFO - 	attn_heads: 4
+2026-03-31 14:58 - INFO - 	dropout: 0.1
+2026-03-31 14:58 - INFO - 	epochs: 2
+2026-03-31 14:58 - INFO - 	lr: 0.001
+2026-03-31 14:58 - INFO - 	warmup_epochs: 10
+2026-03-31 14:58 - INFO - 	warmup_lr: 0.0001
+2026-03-31 14:58 - INFO - 	final_lr: 5e-05
+2026-03-31 14:58 - INFO - 	lr_F: 0.001
+2026-03-31 14:58 - INFO - 	early_stop: 15
+2026-03-31 14:58 - INFO - 	alpha: 0.5
+2026-03-31 14:58 - INFO - 	beta: 0.3
+2026-03-31 14:58 - INFO - 	gamma: 0.2
+2026-03-31 14:58 - INFO - 	T_min: 200.0
+2026-03-31 14:58 - INFO - 	T_max: 330.0
+2026-03-31 14:58 - INFO - 	delta_T_max: 15.0
+2026-03-31 14:58 - INFO - 	F_layers_num: 3
+2026-03-31 14:58 - INFO - 	F_hidden_dim: 64
+2026-03-31 14:58 - INFO - 	save_folder: results_time_test
+2026-03-31 14:58 - INFO - 	log_dir: train_log.txt
+2026-03-31 14:58 - INFO - 	device: cuda
+2026-03-31 14:58 - INFO - 	demo: True
+2026-03-31 14:58 - INFO - [Train] epoch:1, lr:0.000100, data:0.794387, PDE:0.385272, phys:400.233838, total:121.057174
+2026-03-31 14:58 - INFO - [Valid] epoch:1, MSE: 0.33989298
+2026-03-31 14:58 - INFO - [Test] MSE:1.74796951, MAE:1.194518, MAPE:0.990825, RMSE:1.322108
+2026-03-31 14:58 - INFO - [Train] epoch:2, lr:0.000200, data:0.356379, PDE:0.075411, phys:400.512842, total:120.547937
+2026-03-31 14:58 - INFO - [Valid] epoch:2, MSE: 0.25556993
+2026-03-31 14:58 - INFO - [Test] MSE:1.28772318, MAE:1.015099, MAPE:0.845542, RMSE:1.134779
